@@ -29,7 +29,7 @@ dayList.innerHTML=days.map(card).join('');
 const chart=document.querySelector('#chart');
 chart.innerHTML=days.filter(d=>d.steps).map(d=>`<div class="bar-col" title="Day ${d.day}：${fmt(d.steps)} 步"><i style="height:${d.steps/41000*100}%"></i><span>${d.day}</span></div>`).join('');
 
-let map,markers={};
+let map,markers={},routeLines={};
 function panelView(d){panel.innerHTML=`<span class="daytag">DAY ${String(d.day).padStart(2,'0')} · ${d.date}</span><h3>${d.from===d.to?d.to:`${d.from} → ${d.to}`}</h3><p>${d.note}</p><div class="metrics"><span>${d.km!=null?'🚶 '+d.km+' km':'📍 停留／移動'}</span>${d.boat?`<span>⛵ ${d.boat} km</span>`:''}<span>${d.steps?'◉ '+fmt(d.steps)+' 步':''}</span></div>`;document.querySelectorAll('.day-card').forEach(el=>el.classList.toggle('active',+el.dataset.day===d.day))}
 function initMap(){
   if(!window.L){panel.innerHTML='<h3>地圖載入失敗</h3><p>請確認網路連線後重新整理；每日旅程仍可在下方閱讀。</p>';return}
@@ -40,8 +40,8 @@ function initMap(){
   grouped.spiritual.unshift({lat:days[9].lat,lng:days[9].lng});
   grouped.spiritual.splice(grouped.spiritual.length-2,0,{lat:days[13].lat,lng:days[13].lng});
   grouped.sea.unshift({lat:days[12].lat,lng:days[12].lng});grouped.after.unshift({lat:days[15].lat,lng:days[15].lng});
-  Object.entries(grouped).forEach(([key,pts])=>L.polyline(pts.map(p=>[p.lat,p.lng]),{color:colors[key],weight:key==='sea'?5:6,opacity:.9,dashArray:key==='sea'?'7 12':null,lineCap:'round'}).addTo(map));
-  days.forEach(d=>{const cls=d.line==='spiritual'||d.line==='sea'?'spirit':d.line==='after'?'finish':'';const icon=L.divIcon({className:'',html:`<div class="marker ${cls}">${d.day}</div>`,iconSize:[30,30],iconAnchor:[15,15]});markers[d.day]=L.marker([d.lat,d.lng],{icon}).addTo(map).on('click',()=>selectDay(d,true));});
+  Object.entries(grouped).forEach(([key,pts])=>{routeLines[key]=L.polyline(pts.map(p=>[p.lat,p.lng]),{color:colors[key],weight:key==='sea'?6:7,opacity:.92,dashArray:key==='sea'?'6 13':null,lineCap:'round'}).addTo(map)});
+  days.forEach(d=>{const cls=d.line==='sea'?'sea-mark':d.line==='spiritual'?'spirit':d.line==='after'?'finish':'';const icon=L.divIcon({className:'',html:`<div class="marker ${cls}"><span>${d.day}</span></div>`,iconSize:[34,34],iconAnchor:[17,30]});markers[d.day]=L.marker([d.lat,d.lng],{icon}).addTo(map).on('click',()=>selectDay(d,true));});
   fitAll();panelView(days[0]);
 }
 function fitAll(){map.fitBounds([[41.12,-9.34],[43.17,-8.45]],{padding:[35,35]})}
@@ -49,7 +49,18 @@ function selectDay(d,scroll=false){panelView(d);if(map){map.flyTo([d.lat,d.lng],
 dayList.addEventListener('click',e=>{const el=e.target.closest('.day-card');if(el)selectDay(days.find(d=>d.day===+el.dataset.day))});
 dayList.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.day-card')){e.preventDefault();selectDay(days.find(d=>d.day===+e.target.dataset.day))}});
 document.querySelectorAll('.filters button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.day-card').forEach(c=>c.classList.toggle('hidden',btn.dataset.filter!=='all'&&c.dataset.type!==btn.dataset.filter))}));
-document.querySelector('#resetMap').addEventListener('click',fitAll);
+document.querySelector('#resetMap').addEventListener('click',()=>document.querySelector('#routeTabs [data-route="all"]').click());
+const routeRanges={central:[1,10],spiritual:[11,16],sea:[13,14],after:[17,19]};
+document.querySelector('#routeTabs').addEventListener('click',e=>{
+  const btn=e.target.closest('button');if(!btn||!map)return;
+  document.querySelectorAll('#routeTabs button').forEach(b=>b.classList.toggle('active',b===btn));
+  const key=btn.dataset.route;
+  Object.entries(routeLines).forEach(([name,line])=>line.setStyle({opacity:(key==='all'||name===key)?0.92:0.12,weight:(key==='all'||name===key)?(name==='sea'?6:7):3}));
+  Object.entries(markers).forEach(([n,m])=>{const range=routeRanges[key];m.setOpacity(!range||(+n>=range[0]&&+n<=range[1])?1:.18)});
+  if(key==='all'){fitAll();panelView(days[0]);return}
+  const range=routeRanges[key],subset=days.filter(d=>d.day>=range[0]&&d.day<=range[1]);
+  map.fitBounds(subset.map(d=>[d.lat,d.lng]),{padding:[70,70]});panelView(subset[0]);
+});
 const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 addEventListener('scroll',()=>{document.querySelector('#progress').style.width=`${scrollY/(document.documentElement.scrollHeight-innerHeight)*100}%`},{passive:true});
 initMap();

@@ -49,8 +49,16 @@
       <div class="map-head wrap"><div><span class="kicker">互動旅程地圖</span><h2>點一座城，<br>回到那一天。</h2></div><p>地圖標記和下方每日卡片會彼此連動。黃色箭頭是步行，水藍色虛線是從 Vilanova de Arousa 前往 Padrón 的船程。</p></div>
       <div class="map-shell wrap">
         <div id="map" aria-label="葡萄牙之路互動地圖"></div>
+        <div class="map-version"><b>MAP V2</b><span>LEAFLET × OSM</span></div>
+        <div class="route-tabs" id="routeTabs" role="group" aria-label="切換路線分段">
+          <button class="active" data-route="all"><i></i>全程</button>
+          <button data-route="central"><i></i>中央線</button>
+          <button data-route="spiritual"><i></i>靈性線</button>
+          <button data-route="sea"><i></i>海上段</button>
+          <button data-route="after"><i></i>世界盡頭</button>
+        </div>
         <aside class="map-panel" id="mapPanel" aria-live="polite"></aside>
-        <button class="reset-map" id="resetMap">顯示全程</button>
+        <button class="reset-map" id="resetMap">⌖ 重新定位全程</button>
       </div>
     </section>
 
