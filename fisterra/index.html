@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fisterra｜太陽死去的地方，舊我告別之處</title>
+<meta name="description" content="朝聖之路 Day 17：從 Santiago de Compostela 搭 Monbus 沿海岸線抵達 Fisterra，走到 Faro de Fisterra 的 Km 0,000，目送夕陽死去、明月升起。顧老師旅拍＋世界盡頭的神話。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fisterra｜太陽死去的地方，舊我告別之處">
+<meta property="og:description" content="朝聖之路 Day 17：世界的盡頭、真正的 0 K。顧老師旅拍與 Fisterra 的四則神話。">
+<meta property="og:image" content="https://maskywg.github.io/fisterra/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://maskywg.github.io/fisterra/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fisterra｜太陽死去的地方，舊我告別之處">
+<meta name="twitter:description" content="朝聖之路 Day 17：世界的盡頭、真正的 0 K。顧老師旅拍與 Fisterra 的四則神話。">
+<meta name="twitter:image" content="https://maskywg.github.io/fisterra/og-image.jpg">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#f6f0e4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f0e4;
+  --paper:#fffaf0;
+  --ink:#22303c;
+  --muted:#65727e;
+  --line:#e3d9c4;
+  --sea:#3d6a8a;
+  --sea-soft:#dde8ee;
+  --gold:#c98a2e;
+  --gold-soft:#f4e2b8;
+  --rose:#b8325f;
+  --serif:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --latin:"Cormorant Garamond","Noto Serif TC",Georgia,serif;
+  --radius:14px;
+  --shadow:0 18px 40px -22px rgba(34,48,60,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.95;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.narrow{width:min(760px,100% - 40px);margin-inline:auto}
+
+/* ---------- nav ---------- */
+nav.top{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px clamp(16px,4vw,36px);background:rgba(246,240,228,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(227,217,196,.7);transform:translateY(-100%);transition:transform .35s}
+nav.top.on{transform:none}
+nav.top .logo{font-family:var(--latin);font-weight:600;font-size:22px;letter-spacing:.14em}
+nav.top ul{display:flex;gap:clamp(12px,2.4vw,28px);list-style:none;font-size:14px}
+nav.top a{text-decoration:none;color:var(--muted);transition:color .2s}
+nav.top a:hover{color:var(--ink)}
+nav.top .bar{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:linear-gradient(90deg,var(--gold),var(--rose))}
+@media(max-width:640px){nav.top ul li:nth-child(n+4){display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#3b3a3a}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 46%;transform:scale(1.04);animation:drift 24s ease-out forwards}
+@keyframes drift{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,24,34,.35) 0%,rgba(20,24,34,0) 30%,rgba(20,24,34,.15) 55%,rgba(20,24,34,.78) 100%)}
+.hero .inner{position:relative;z-index:2;padding:0 0 clamp(40px,8vh,84px)}
+.eyebrow{font-family:var(--latin);font-size:clamp(15px,2vw,19px);letter-spacing:.22em;text-transform:uppercase;opacity:.92}
+.eyebrow b{font-weight:600;color:#ffd58a}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(34px,6.6vw,74px);line-height:1.28;margin:.35em 0 .4em;text-shadow:0 2px 28px rgba(0,0,0,.35);letter-spacing:.02em}
+.hero h1 em{font-style:normal;color:#ffd58a}
+.hero .route{font-size:clamp(15px,1.8vw,19px);opacity:.95;display:flex;flex-wrap:wrap;gap:.3em 1em;align-items:center}
+.hero .route span.arrow{color:#ffd58a}
+.credit{display:inline-flex;align-items:center;gap:12px;margin-top:26px;padding:8px 20px 8px 8px;background:rgba(255,250,240,.16);border:1px solid rgba(255,255,255,.35);border-radius:999px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);font-size:14.5px}
+.credit img{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:50% 25%;border:2px solid #f2a7c2}
+.credit b{color:#ffd8e4;font-weight:500}
+.cue{position:absolute;right:clamp(16px,4vw,40px);bottom:clamp(28px,6vh,60px);z-index:2;writing-mode:vertical-rl;font-family:var(--latin);letter-spacing:.3em;font-size:13px;opacity:.8}
+.cue::after{content:"";display:block;width:1px;height:54px;margin:12px auto 0;background:linear-gradient(#fff,transparent);animation:cue 2.2s infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media(max-width:640px){.cue{display:none}}
+
+/* ---------- stats ---------- */
+.stats{background:var(--paper);border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 16px;text-align:center;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat .n{font-family:var(--latin);font-size:clamp(30px,4.4vw,48px);font-weight:600;line-height:1.1;color:var(--sea)}
+.stat .n small{font-size:.5em;margin-left:.15em;font-family:var(--sans);color:var(--muted)}
+.stat .l{font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.5}
+@media(max-width:640px){.stats .wrap{grid-template-columns:repeat(2,1fr)}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* ---------- section basics ---------- */
+section.ch{padding:clamp(64px,10vw,120px) 0}
+section.ch.alt{background:var(--paper);border-block:1px solid var(--line)}
+.kicker{font-family:var(--latin);font-size:15px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.kicker i{font-style:normal;color:var(--muted);margin-left:.8em;letter-spacing:.12em}
+h2{font-family:var(--serif);font-weight:900;font-size:clamp(28px,4.4vw,46px);line-height:1.38;margin:.3em 0 .55em;letter-spacing:.015em}
+h2 em{font-style:normal;color:var(--sea)}
+h3{font-family:var(--serif);font-size:clamp(20px,2.4vw,25px);font-weight:700;line-height:1.5}
+p+p{margin-top:1.1em}
+.lead{font-size:clamp(17.5px,2vw,20px);color:#34434f}
+.muted{color:var(--muted)}
+.term{font-family:var(--latin);font-style:italic;color:var(--sea);font-size:1.06em;white-space:nowrap}
+
+/* two-column text+figure */
+.split{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,5vw,64px);align-items:center}
+.split.rev{grid-template-columns:1.1fr 1fr}
+.split.rev .txt{order:2}
+@media(max-width:820px){.split,.split.rev{grid-template-columns:1fr}.split.rev .txt{order:0}}
+
+/* figures */
+figure{position:relative;margin:0}
+figure.zoom{cursor:zoom-in}
+figure .frame{position:relative;overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow);background:var(--sea-soft)}
+figure img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+figure.zoom:hover img{transform:scale(1.035)}
+figcaption{margin-top:12px;font-size:14px;line-height:1.7;color:var(--muted);padding-inline:2px}
+figcaption b{font-family:var(--latin);color:var(--gold);font-weight:600;letter-spacing:.1em;margin-right:.6em;font-size:15px}
+.r43 .frame{aspect-ratio:4/3}
+.r34 .frame{aspect-ratio:3/4}
+.r32 .frame{aspect-ratio:3/2}
+.r169 .frame{aspect-ratio:16/9}
+.r-pan .frame{aspect-ratio:2852/640}
+.r-pan img{object-fit:cover}
+.contain img{object-fit:contain}
+
+.grid{display:grid;gap:clamp(14px,2.4vw,26px)}
+.g3{grid-template-columns:1.25fr 1.25fr .8fr}
+.g2{grid-template-columns:1fr 1fr}
+.g-stag{grid-template-columns:repeat(2,1fr);align-items:start}
+.g-stag figure:nth-child(2){margin-top:clamp(0px,6vw,64px)}
+@media(max-width:720px){.g3{grid-template-columns:1fr 1fr}.g3 figure:first-child{grid-column:1/-1}.g2{grid-template-columns:1fr}}
+.mt{margin-top:clamp(28px,4vw,52px)}
+.mt2{margin-top:clamp(44px,7vw,84px)}
+
+/* route timeline */
+.route-tl{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin-top:clamp(34px,5vw,56px);counter-reset:s}
+.route-tl::before{content:"";position:absolute;left:8%;right:8%;top:19px;height:2px;background:repeating-linear-gradient(90deg,var(--gold) 0 8px,transparent 8px 15px)}
+.step{position:relative;text-align:center;padding:0 6px}
+.step::before{counter-increment:s;content:counter(s);position:relative;z-index:1;display:grid;place-items:center;width:38px;height:38px;margin:0 auto 12px;border-radius:50%;background:var(--paper);border:2px solid var(--gold);font-family:var(--latin);font-weight:600;font-size:17px;color:var(--gold)}
+.step.end::before{background:var(--gold);color:#fff}
+.step b{display:block;font-family:var(--serif);font-size:15.5px;line-height:1.5}
+.step span{display:block;font-size:13px;color:var(--muted);line-height:1.55;margin-top:3px}
+@media(max-width:760px){
+  .route-tl{grid-template-columns:1fr;gap:18px}
+  .route-tl::before{left:18px;right:auto;top:6px;bottom:6px;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--gold) 0 8px,transparent 8px 15px)}
+  .step{text-align:left;padding-left:56px}
+  .step::before{position:absolute;left:0;top:0;margin:0}
+}
+
+/* quote / diary */
+blockquote.diary{position:relative;padding:28px clamp(22px,4vw,40px);background:linear-gradient(135deg,#fff7e2,#fdecc8);border-left:4px solid var(--gold);border-radius:4px var(--radius) var(--radius) 4px;font-family:var(--serif);font-size:clamp(17px,1.9vw,19.5px);line-height:2.05;color:#43341b}
+blockquote.diary cite{display:block;margin-top:14px;font-family:var(--sans);font-style:normal;font-size:13.5px;color:#8a7443;letter-spacing:.05em}
+.pull{font-family:var(--serif);font-weight:700;font-size:clamp(22px,3.4vw,36px);line-height:1.6;text-align:center;color:var(--sea)}
+.pull small{display:block;margin-top:.6em;font-family:var(--latin);font-weight:500;letter-spacing:.24em;font-size:.5em;color:var(--gold);text-transform:uppercase}
+
+/* 顧老師 旅途筆記 */
+.jot{display:flex;gap:14px;align-items:flex-start;margin-top:1.4em}
+.jot>img{flex:none;width:42px;height:42px;border-radius:50%;object-fit:cover;object-position:50% 25%;border:2px solid #f2a7c2;margin-top:4px}
+.jot .t{font-family:var(--serif);font-size:clamp(16.5px,1.9vw,18.5px);line-height:2.05;color:#33414d;position:relative;padding-left:16px;border-left:2px solid var(--gold-soft)}
+.jot .t p+p{margin-top:.7em}
+.jot .t .who{display:block;font-family:var(--sans);font-size:12.5px;letter-spacing:.14em;color:var(--rose);margin-bottom:.3em}
+.finale .jot>img{border-color:#ffd8e4}
+.finale .jot .t{color:rgba(255,255,255,.93);border-left-color:rgba(255,213,138,.55)}
+.finale .jot .t .who{color:#ffd8e4}
+.tripcard{display:inline-flex;flex-direction:column;gap:2px;margin:6px 0 22px;padding:14px 22px;background:var(--paper);border:1px dashed var(--gold);border-radius:12px;font-size:16px;line-height:1.9;transform:rotate(-1.2deg);box-shadow:0 10px 24px -18px rgba(34,48,60,.5)}
+.tripcard b{font-family:var(--serif);font-size:20px;color:var(--sea)}
+
+/* trio photo tag for 顧老師 */
+.tag{position:absolute;z-index:3;left:35%;top:27%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;pointer-events:none}
+.tag span{background:var(--rose);color:#fff;font-size:13.5px;font-weight:500;letter-spacing:.06em;padding:3px 12px;border-radius:999px;box-shadow:0 6px 16px -6px rgba(0,0,0,.5);white-space:nowrap}
+.tag::after{content:"";width:2px;height:20px;background:var(--rose)}
+.tag i{position:absolute;top:calc(100% - 1px);width:11px;height:11px;border-radius:50%;background:var(--rose);border:2px solid #fff;animation:ping 2.2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(184,50,95,.55)}80%,100%{box-shadow:0 0 0 14px rgba(184,50,95,0)}}
+.note-card{margin-top:22px;padding:18px 22px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);font-size:15.5px;line-height:1.85;color:#3e4c58}
+.note-card b{color:var(--rose)}
+
+/* ---------- sky scrubber ---------- */
+.sky-card{border-radius:calc(var(--radius) + 6px);overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.sky{position:relative;aspect-ratio:2/1;overflow:hidden;background:#7fb2dc}
+@media(max-width:640px){.sky{aspect-ratio:4/3}}
+.sky .stars{position:absolute;inset:0 0 40% 0;opacity:0;background-image:
+  radial-gradient(1.4px 1.4px at 12% 22%,#fff,transparent),radial-gradient(1.2px 1.2px at 26% 10%,#fff,transparent),
+  radial-gradient(1.6px 1.6px at 41% 30%,#fff,transparent),radial-gradient(1.2px 1.2px at 58% 12%,#fff,transparent),
+  radial-gradient(1.4px 1.4px at 66% 34%,#fff,transparent),radial-gradient(1.2px 1.2px at 84% 18%,#fff,transparent),
+  radial-gradient(1.6px 1.6px at 92% 36%,#fff,transparent),radial-gradient(1px 1px at 6% 40%,#fff,transparent),radial-gradient(1px 1px at 34% 44%,#fff,transparent)}
+.sky .sun{position:absolute;left:58%;width:clamp(44px,8vw,78px);aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,#fffbe8 0 38%,#ffe08a 62%,rgba(255,200,90,0) 72%);box-shadow:0 0 60px 30px rgba(255,214,120,.5)}
+.sky .moon{position:absolute;left:74%;top:24%;width:clamp(34px,6vw,56px);aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(circle at 38% 36%,#fffdf2,#efe8cf 70%);box-shadow:0 0 40px 14px rgba(255,250,220,.4);opacity:0}
+.sky .sea{position:absolute;left:0;right:0;top:60%;bottom:0;z-index:2}
+.sky .sea::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:rgba(255,255,255,.35)}
+.sky .glint{position:absolute;top:0;bottom:0;width:9%;transform:translateX(-50%);opacity:0;background:repeating-linear-gradient(180deg,rgba(255,240,190,.95) 0 3px,rgba(255,240,190,.15) 3px 9px);-webkit-mask:linear-gradient(180deg,#000,transparent 92%);mask:linear-gradient(180deg,#000,transparent 92%);filter:blur(.6px)}
+.sky .glint.sunL{left:58%}
+.sky .glint.moonL{left:74%;width:5%;background:repeating-linear-gradient(180deg,rgba(255,255,240,.9) 0 2px,rgba(255,255,240,.1) 2px 8px)}
+.sky svg.cliff{position:absolute;left:0;bottom:0;width:46%;height:46%;z-index:3}
+.sky-ui{padding:20px clamp(18px,3vw,30px) 24px;background:var(--paper)}
+.sky-cap{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;min-height:64px}
+.sky-cap .t{font-family:var(--serif);font-weight:700;font-size:clamp(17px,2.2vw,21px);color:var(--sea)}
+.sky-cap .d{font-size:15.5px;color:var(--muted);flex:1 1 280px}
+.scrub{display:flex;gap:14px;align-items:center;margin-top:12px}
+.scrub button{flex:none;width:44px;height:44px;border-radius:50%;border:0;background:var(--gold);color:#fff;font-size:15px;cursor:pointer;display:grid;place-items:center;transition:transform .2s,background .2s}
+.scrub button:hover{transform:scale(1.07);background:#b4761f}
+.scrub button:focus-visible,.scrub input:focus-visible{outline:3px solid rgba(61,106,138,.45);outline-offset:3px}
+.scrub .rng{flex:1}
+.scrub input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:6px;border-radius:999px;background:linear-gradient(90deg,#86b4dc,#f0a24e 50%,#1f2a4a);outline:none}
+.scrub input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:#fff;border:3px solid var(--gold);cursor:grab;box-shadow:0 3px 10px rgba(0,0,0,.25)}
+.scrub input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#fff;border:3px solid var(--gold);cursor:grab}
+.ticks{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:8px;font-family:var(--latin);letter-spacing:.06em}
+.ticks span:nth-child(3){color:var(--gold);font-weight:600}
+
+/* ---------- myth cards ---------- */
+.myth-intro{max-width:760px}
+.myth-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,2.6vw,28px);margin-top:clamp(30px,5vw,54px)}
+.myth{position:relative;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,3.4vw,38px);overflow:hidden;transition:transform .35s,box-shadow .35s}
+.myth:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.myth .no{position:absolute;right:16px;top:-10px;font-family:var(--serif);font-weight:900;font-size:120px;line-height:1;color:rgba(201,138,46,.13);pointer-events:none}
+.myth .tg{font-family:var(--latin);letter-spacing:.2em;font-size:13px;color:var(--gold);font-weight:600;text-transform:uppercase}
+.myth h3{margin:.35em 0 .7em;position:relative}
+.myth .mlead{position:relative;font-size:15.8px;line-height:1.9;color:#2c3a46;margin-bottom:.9em}
+.myth ul{list-style:none;position:relative}
+.myth li{position:relative;padding-left:1.3em;font-size:15.8px;line-height:1.9;color:#3a4956}
+.myth li+li{margin-top:.75em}
+.myth li::before{content:"";position:absolute;left:0;top:.85em;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.myth li b{color:var(--ink)}
+@media(max-width:760px){.myth-grid{grid-template-columns:1fr}}
+.fn{margin-top:26px;font-size:13.5px;color:var(--muted);line-height:1.8;border-top:1px dashed var(--line);padding-top:16px}
+
+/* threshold finale */
+.finale{position:relative;color:#fff;overflow:hidden;background:#1f2a4a}
+.finale::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#f6f0e4 0,#c98a5c 44px,#8a5b5c 16%,#4d5379 46%,#1c2748 100%)}
+.finale .in{position:relative;z-index:1;padding:clamp(80px,12vw,150px) 0 clamp(70px,10vw,120px)}
+.finale h2{color:#fff;text-align:center;text-shadow:0 2px 20px rgba(20,20,40,.4)}
+.finale h2 em{color:#ffd58a}
+.finale p{color:rgba(255,255,255,.9)}
+.finale .pull{color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.finale .pull small{color:#ffd58a}
+.finale figcaption{color:rgba(255,255,255,.78)}
+.finale figcaption b{color:#ffd58a}
+.finale .frame{box-shadow:0 24px 50px -24px rgba(0,0,0,.7)}
+.threshold{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:clamp(34px,5vw,54px) auto 0;max-width:860px;text-align:center}
+.threshold div{padding:18px 10px;border-left:1px solid rgba(255,255,255,.28)}
+.threshold div:first-child{border-left:0}
+.threshold b{display:block;font-family:var(--serif);font-size:clamp(18px,2.6vw,26px);color:#ffd58a}
+.threshold span{font-size:13.5px;opacity:.85}
+@media(max-width:560px){.threshold{grid-template-columns:1fr}.threshold div{border-left:0;border-top:1px solid rgba(255,255,255,.28)}.threshold div:first-child{border-top:0}}
+
+footer{background:#151c2f;color:rgba(255,255,255,.66);text-align:center;padding:38px 20px 46px;font-size:13.5px;line-height:1.9}
+footer b{font-family:var(--latin);letter-spacing:.2em;color:#ffd58a;font-size:17px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero img.bg{animation:none;transform:none}html{scroll-behavior:auto}.cue::after,.tag i{animation:none}}
+
+/* music */
+#music{position:fixed;left:clamp(12px,2.4vw,24px);bottom:clamp(12px,2.4vw,24px);z-index:60;display:flex;align-items:center;gap:10px;padding:8px 16px 8px 8px;border:1px solid rgba(255,255,255,.55);border-radius:999px;background:rgba(34,48,60,.72);color:#fff;font:500 13.5px/1 var(--sans);letter-spacing:.06em;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 10px 28px -12px rgba(0,0,0,.6);transition:background .25s,transform .25s}
+#music:hover{background:rgba(34,48,60,.88);transform:translateY(-2px)}
+#music:focus-visible{outline:3px solid rgba(255,213,138,.7);outline-offset:3px}
+#music .ic{width:32px;height:32px;border-radius:50%;background:var(--gold);display:grid;place-items:center;flex:none}
+#music .ic svg{width:16px;height:16px;fill:#fff}
+#music .eq{display:flex;gap:2px;align-items:flex-end;height:14px}
+#music .eq i{width:3px;background:#ffd58a;border-radius:1px;height:4px;animation:eq 1s ease-in-out infinite}
+#music .eq i:nth-child(2){animation-delay:.2s}#music .eq i:nth-child(3){animation-delay:.4s}#music .eq i:nth-child(4){animation-delay:.6s}
+@keyframes eq{0%,100%{height:3px}50%{height:14px}}
+#music:not(.on) .eq i{animation:none;height:3px}
+#music.wait .ic{animation:ping2 1.8s infinite}
+@keyframes ping2{0%{box-shadow:0 0 0 0 rgba(201,138,46,.7)}80%,100%{box-shadow:0 0 0 12px rgba(201,138,46,0)}}
+@media(prefers-reduced-motion:reduce){#music .eq i,#music.wait .ic{animation:none}}
+@media(max-width:480px){#music .lb{display:none}#music{padding:6px}}
+
+/* lightbox */
+#lb{position:fixed;inset:0;z-index:100;display:none;flex-direction:column;align-items:center;justify-content:center;background:rgba(14,18,28,.93);padding:24px 16px 20px}
+#lb.on{display:flex}
+#lb img{max-width:min(96vw,1400px);max-height:78vh;object-fit:contain;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+#lb p{color:#eee;font-size:14.5px;margin-top:16px;max-width:760px;text-align:center;line-height:1.75}
+#lb button{position:absolute;background:rgba(255,255,255,.14);border:0;color:#fff;width:46px;height:46px;border-radius:50%;font-size:22px;cursor:pointer}
+#lb button:hover{background:rgba(255,255,255,.28)}
+#lb .x{top:16px;right:16px}#lb .pv{left:14px;top:50%}#lb .nx{right:14px;top:50%}
+</style>
+</head>
+<body>
+
+<nav class="top" id="nav">
+  <span class="logo">FISTERRA</span>
+  <ul>
+    <li><a href="#depart">出發</a></li>
+    <li><a href="#arrive">抵達</a></li>
+    <li><a href="#km0">Km 0</a></li>
+    <li><a href="#sunset">日落</a></li>
+    <li><a href="#myth">神話</a></li>
+    <li><a href="#threshold">門檻</a></li>
+  </ul>
+  <span class="bar" id="bar"></span>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <img class="bg" src="images/s09-couple-sunset.jpg" alt="Fisterra 岬角上的落日，兩個剪影坐在岩石上看海">
+  <div class="inner wrap">
+    <p class="eyebrow">Day 17 · <b>9/26（六）</b> · Camino de Santiago</p>
+    <h1>太陽在這裡死去，<br><em>舊的自己</em>，也在這裡放下。</h1>
+    <p class="route"><span>Santiago de Compostela</span><span class="arrow">→</span><span>Fisterra</span><span style="opacity:.6">｜</span><span>世界的盡頭，朝聖之路真正的 0 K</span></p>
+    <div class="credit"><img src="images/avatar.jpg" alt="顧老師"><span>旅拍｜<b>顧老師</b>（照片裡穿紅衣的那位）</span></div>
+  </div>
+  <span class="cue">SCROLL</span>
+</header>
+
+<!-- ============ STATS ============ -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat rv"><div class="n">2<small>小時</small></div><div class="l">Monbus 沿海岸線公路<br>悠悠晃晃</div></div>
+    <div class="stat rv d1"><div class="n">3<small>公里</small></div><div class="l">從港口閑步<br>到 Faro de Fisterra</div></div>
+    <div class="stat rv d2"><div class="n">Km 0,000</div><div class="l">朝聖之路<br>真正的零公里</div></div>
+    <div class="stat rv d3"><div class="n">20:20</div><div class="l">表定日落<br>不到一分鐘後月出</div></div>
+  </div>
+</div>
+
+<!-- ============ INTRO ============ -->
+<section class="ch" style="padding-bottom:0">
+  <div class="narrow rv">
+    <p class="kicker">Prologue<i>序</i></p>
+    <h2>走完了聖地牙哥，<br>還有一個地方，<em>要一直走到海</em>。</h2>
+    <div class="tripcard"><b>Day 17　9/26（六）</b><span>🚶‍➡️ from：Santiago de Compostela</span><span>🏘️ to：Fisterra</span></div>
+    <p class="lead">今天前往的地方，是讀神話傳說時極為神往的地方，沒想到就從 Santiago de Compostela Monbus 總站上車，沿著海岸線公路悠悠晃晃 2 小時就到了 Fisterra。</p>
+    <p class="muted">同一個地方有三種寫法：拉丁文 <span class="term">Finis Terrae</span>（大地的盡頭）、西班牙語 <span class="term">Finisterre</span>、加利西亞語 <span class="term">Fisterra</span>。這一頁把顧老師這一天的旅拍與筆記，和這個地方被訴說了千年的故事，放在一起。</p>
+  </div>
+
+  <div class="wrap">
+    <div class="route-tl">
+      <div class="step rv"><b>Santiago de Compostela</b><span>Monbus 總站上車</span></div>
+      <div class="step rv d1"><b>海岸線公路</b><span>約 2 小時</span></div>
+      <div class="step rv d1"><b>Fisterra 港口</b><span>漁港小鎮</span></div>
+      <div class="step rv d2"><b>閑步約 3 公里</b><span>往岬角走</span></div>
+      <div class="step rv d2"><b>Faro de Fisterra</b><span>Km 0,000</span></div>
+      <div class="step end rv d3"><b>20:20 日落 → 月出</b><span>世界盡頭的黃昏</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CH 1 出發 ============ -->
+<section class="ch" id="depart">
+  <div class="wrap">
+    <div class="split">
+      <div class="txt rv">
+        <p class="kicker">Chapter 01<i>出發</i></p>
+        <h2>車頭轉向的，<br>是<em>大西洋</em>。</h2>
+        <p>多數人以為，抵達聖地牙哥大教堂就是朝聖的句點。可是在 Santiago de Compostela–Daniel Castelao 這座火車站與巴士站相連的 Intermodal 複合站裡，還有一班往西的車，等著載你去看「路真正結束的地方」。</p>
+        <div class="jot"><img src="images/avatar.jpg" alt=""><div class="t"><span class="who">顧老師 · 旅途筆記</span>
+          <p>傍晚的車站，天邊還留著一抹橘。</p>
+          <p>這一次的目的地，不是任何一座大教堂，而是一個名字聽起來就像句點的地方。</p></div></div>
+      </div>
+      <figure class="zoom r43 rv d1" data-cap="傍晚的 Santiago de Compostela–Daniel Castelao 站，橘色餘暉還掛在左側天邊。">
+        <div class="frame"><img src="images/s01-station-dusk.jpg" alt="Santiago de Compostela Intermodal 車站外觀與黃昏天空" loading="lazy"></div>
+        <figcaption><b>01</b>Santiago de Compostela–Daniel Castelao 站，黃昏。</figcaption>
+      </figure>
+    </div>
+
+    <div class="grid g3 mt2">
+      <figure class="zoom r43 rv" data-cap="Estación de Autobuses：巴士總站大廳的藍色招牌，玻璃窗外是聖地牙哥的山坡。">
+        <div class="frame"><img src="images/s13-station-hall.jpg" alt="Estación de Autobuses 大廳與行人" loading="lazy"></div>
+        <figcaption><b>02</b>Estación de Autobuses，巴士總站大廳。</figcaption>
+      </figure>
+      <figure class="zoom r43 rv d1" data-cap="2 號月台旁的 Monbus，行李箱已經排在車邊，旅人正在排隊上車。">
+        <div class="frame"><img src="images/s05-monbus.jpg" alt="停在 2 號月台的 Monbus 巴士與排隊乘客" loading="lazy"></div>
+        <figcaption><b>03</b>2 號月台的 Monbus，上車。</figcaption>
+      </figure>
+      <figure class="zoom r34 rv d2" data-cap="手機地圖截圖：藍點正落在 Outes 與 Noia 之間、Ría de Muros y Noia 的最內側，往海岸線前進。">
+        <div class="frame contain"><img src="images/s03-map-ria.jpg" alt="手機地圖顯示藍點在 Outes 與 Noia 之間的 Ría de Muros y Noia" loading="lazy" style="object-position:50% 60%"></div>
+        <figcaption><b>04</b>藍點滑過 Outes 與 Noia，沿 Ría de Muros y Noia 前進。</figcaption>
+      </figure>
+    </div>
+
+    <div class="split rev mt2">
+      <div class="txt rv">
+        <h3>加利西亞的「Ría」，是海伸進陸地的手指</h3>
+        <div class="jot"><img src="images/avatar.jpg" alt=""><div class="t"><span class="who">顧老師 · 旅途筆記</span>
+          <p>海岸線公路很安靜，車子悠悠晃晃。</p>
+          <p>窗外的海灣一個接一個，水面平得像一塊布，遠處一排排細長的線，靜靜浮在水上。</p>
+          <p>沒有人急。大概是因為都知道，再往前，就沒有路了。</p></div></div>
+      </div>
+      <figure class="zoom r43 rv d1" data-cap="巴士窗外：平靜的海灣，遠處水面有一排排養殖設施，左側山丘上是聚落。">
+        <div class="frame"><img src="images/s04-bus-window.jpg" alt="巴士車窗外的平靜海灣與遠方水面上的養殖排" loading="lazy"></div>
+        <figcaption><b>05</b>巴士窗外的海灣。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CH 2 抵達 ============ -->
+<section class="ch alt" id="arrive">
+  <div class="wrap">
+    <div class="split rev">
+      <div class="txt rv">
+        <p class="kicker">Chapter 02<i>抵達</i></p>
+        <h2>一座漁港，<br>與一張寫著<em>「km 0,00」</em>的地圖。</h2>
+        <div class="jot"><img src="images/avatar.jpg" alt=""><div class="t"><span class="who">顧老師 · 旅途筆記</span>
+          <p>推開窗，港口就在眼前。</p>
+          <p>小漁船整齊靠著岸，防波堤把海擋在外頭，對岸的山脊上，風車一直慢慢轉。</p>
+          <p>陽台上晾著剛洗好的衣服，一件橘紅，在藍色的海前特別亮。</p>
+          <p>走了這麼多天，連曬衣服這件小事，都有了一點儀式感。</p></div></div>
+      </div>
+      <figure class="zoom r34 rv d1" data-cap="從房間窗口看出去的 Fisterra 漁港：小船、防波堤、遠山與風車。">
+        <div class="frame"><img src="images/s17-window-port.jpg" alt="窗外的 Fisterra 漁港與防波堤，遠方山脊有風力發電機" loading="lazy"></div>
+        <figcaption><b>06</b>窗外的港口。</figcaption>
+      </figure>
+    </div>
+
+    <div class="mt2">
+      <figure class="zoom r32 rv" data-cap="牆上的手繪風地圖：把法國之路（El Camino Francés）從 Saint-Jean-Pied-de-Port 一路畫到大西洋，落點是 Fisterra——「Finisterre, Fin do Camiño km 0,00」。">
+        <div class="frame"><img src="images/s06-poster.jpg" alt="Fisterra 手繪風朝聖之路地圖海報，標示 Fin do Camiño km 0,00" loading="lazy" style="object-position:50% 62%"></div>
+        <figcaption><b>07</b>牆上的手繪地圖：從 Saint-Jean-Pied-de-Port 畫到海邊，終點寫著 <span class="term">Fin do Camiño · km 0,00</span>。</figcaption>
+      </figure>
+    </div>
+
+    <div class="narrow rv" style="margin-top:clamp(20px,3vw,34px)">
+      <div class="jot"><img src="images/avatar.jpg" alt=""><div class="t"><span class="who">顧老師 · 旅途筆記</span>
+        <p>牆上的地圖，從 Saint-Jean-Pied-de-Port 畫到海邊。一路的小點，是一個又一個城鎮。</p>
+        <p>最後落在 Fisterra，寫著 km 0,00。</p>
+        <p>原來，有人早就把終點，畫在最靠近海的那一頁。</p></div></div>
+    </div>
+
+    <div class="grid g2 mt2">
+      <figure class="zoom r43 rv" data-cap="聖瑪利亞德阿雷亞斯教堂（Iglesia de Santa María das Areas）：厚重花崗岩牆、小小的鐘塔與十字架，牆面混著粉紅與灰色的石塊。">
+        <div class="frame"><img src="images/s07-church-ext.jpg" alt="聖瑪利亞德阿雷亞斯教堂（Santa María das Areas）外觀，藍天之下有鐘塔與十字架" loading="lazy"></div>
+        <figcaption><b>08</b>聖瑪利亞德阿雷亞斯教堂 <span class="term">Santa María das Areas</span>，粉紅與灰色石塊拼出斑駁的牆。</figcaption>
+      </figure>
+      <figure class="zoom r43 rv d1" data-cap="教堂內部：尖拱、石柱、深色木長椅，牆上一格格是十四處苦路（Via Crucis）浮雕，盡頭祭壇的吊燈亮著。">
+        <div class="frame"><img src="images/s14-church-interior.jpg" alt="教堂內部的尖拱、木長椅與祭壇吊燈" loading="lazy"></div>
+        <figcaption><b>09</b>教堂內部，光從高窗落進石頭裡。</figcaption>
+      </figure>
+    </div>
+
+    <div class="narrow rv" style="margin-top:clamp(20px,3vw,34px)">
+      <div class="jot"><img src="images/avatar.jpg" alt=""><div class="t"><span class="who">顧老師 · 旅途筆記</span>
+        <p>鎮上的石頭教堂——聖瑪利亞德阿雷亞斯（<span class="term">Santa María das Areas</span>，「沙之聖母」）——安靜地站著。牆面混著粉紅與灰色的石塊，經過那麼多年的風，還是穩穩的。</p>
+        <p>走進去，光從高窗落下來，木長椅空空的，像是在等每一位走到這裡的人，坐一下。</p></div></div>
+    </div>
+
+    <div class="split mt2" style="align-items:start">
+      <figure class="zoom r34 rv" data-cap="顧老師（左，穿紅衣）與旅伴，站在 Fisterra 花崗岩牆前。">
+        <div class="frame">
+          <img src="images/s11-trio.jpg" alt="穿紅色外套的顧老師與兩位旅伴站在花崗岩牆前合影" loading="lazy" style="object-position:50% 40%">
+          <div class="tag"><span>顧老師</span><i></i></div>
+        </div>
+        <figcaption><b>10</b>石牆前的合照：左邊穿紅衣的，是顧老師。</figcaption>
+      </figure>
+      <div class="txt rv d1">
+        <h3>石牆前，站成一排</h3>
+        <div class="jot"><img src="images/avatar.jpg" alt=""><div class="t"><span class="who">顧老師 · 旅途筆記</span>
+          <p>這一天，沒有人問還要走多遠。</p>
+          <p>在粗粗的花崗岩牆前站成一排，笑一下，就是最好的紀念。</p></div></div>
+        <div class="note-card"><b>紅色</b>是這一頁最容易被記住的顏色：地圖海報上那個紅色的大寫 <span class="term">F</span>、陽台上曬的橘紅上衣，還有鏡頭前，穿紅衣的顧老師。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CH 3 Km 0 ============ -->
+<section class="ch" id="km0">
+  <div class="wrap">
+    <div class="narrow rv" style="margin:0">
+      <p class="kicker">Chapter 03<i>零公里</i></p>
+      <h2>從港口出發，<br>閑步三公里，走到<em>路的盡頭</em>。</h2>
+      <p class="lead">從港口出發，閑步 3 公里左右便到達 Faro de Fisterra，是世界的盡頭，也是朝聖之路真正的 0K 之處！</p>
+    </div>
+
+    <div class="grid g-stag mt2" style="max-width:920px;margin-inline:auto">
+      <figure class="zoom r34 rv" data-cap="沿途高處回望：平靜的海灣裡有一艘小船，對岸是花崗岩山脈，前景是松樹和紫色牽牛花。">
+        <div class="frame"><img src="images/s02-bay-boat.jpg" alt="從高處俯瞰海灣，一艘小船和對岸山脈，前景有松樹與紫色花" loading="lazy"></div>
+        <figcaption><b>11</b>回望：海面像鋪開的藍布，只有一艘小船。</figcaption>
+        <div class="jot"><img src="images/avatar.jpg" alt=""><div class="t"><span class="who">顧老師 · 旅途筆記</span>
+          <p>沿路回頭看，海灣藍得很安靜，水中央只有一艘小船。</p>
+          <p>走到這裡，好像也不需要再說什麼了。</p></div></div>
+      </figure>
+      <figure class="zoom r34 rv d1" data-cap="顧老師：「真的走到了世界的盡頭，旅行的悸動，遠勝於靈魂的重生」——Km 0,000 界碑，後方是 Faro de Fisterra 燈塔。">
+        <div class="frame"><img src="images/c2-km0-words.jpg" alt="Km 0,000 花崗岩界碑與黃色扇貝標誌，顧老師寫著：真的走到了世界的盡頭，旅行的悸動，遠勝於靈魂的重生" loading="lazy"></div>
+        <figcaption><b>12</b><span class="term">Km 0,000</span>，還有顧老師當下寫給這一刻的話。</figcaption>
+        <div class="jot"><img src="images/avatar.jpg" alt=""><div class="t"><span class="who">顧老師 · 旅途筆記</span>
+          <p>黃色的貝殼，一路指著西邊。到了這裡，最後一個數字是 0。</p></div></div>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CH 4 日落 ============ -->
+<section class="ch alt" id="sunset">
+  <div class="wrap">
+    <div class="narrow rv" style="margin:0">
+      <p class="kicker">Chapter 04<i>日落</i></p>
+      <h2>目送太陽，<br>向大海<em>死去</em>。</h2>
+      <p class="lead">表定 20:20 左右的夕陽餘暉，因著雲層增厚而顯得更值得期待。拖動下面的時間軸，重看一次那天黃昏的順序。</p>
+    </div>
+
+    <div class="sky-card mt rv">
+      <div class="sky" id="sky" aria-label="日落到月出的互動示意圖">
+        <div class="stars" id="stars"></div>
+        <div class="sun" id="sun"></div>
+        <div class="moon" id="moon"></div>
+        <div class="sea" id="sea">
+          <div class="glint sunL" id="gs"></div>
+          <div class="glint moonL" id="gm"></div>
+        </div>
+        <svg class="cliff" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100V58C6 55 12 60 18 56S30 48 38 56 50 68 58 78s14 14 22 22Z" fill="#1c2431" opacity=".94"/></svg>
+      </div>
+      <div class="sky-ui">
+        <div class="sky-cap" aria-live="polite"><span class="t" id="capT"></span><span class="d" id="capD"></span></div>
+        <div class="scrub">
+          <button id="play" type="button" aria-label="播放">▶</button>
+          <div class="rng"><input id="rng" type="range" min="0" max="4" step="0.01" value="0" aria-label="黃昏時間軸"></div>
+        </div>
+        <div class="ticks"><span>日落前</span><span>雲漸厚</span><span>20:20</span><span>沉入海</span><span>月出</span></div>
+      </div>
+    </div>
+
+    <div class="narrow rv mt2">
+      <blockquote class="diary">
+        表定 20:20 左右的夕陽餘暉，因著雲層增厚而顯得更值得期待，站在世界的盡頭層疊岩石上，180 度左右北大西洋的視角一覽無遺，目送夕陽西落向大海死去。<br><br>甫目送死去的夕陽，不到一分鐘，不遠處一輪明月高掛天空，海面波光粼粼。<br><br>時間的輪迴，就是如此自然簡單。
+        <cite>—— 顧老師 · 9/26 現場筆記</cite>
+      </blockquote>
+    </div>
+
+    <div class="grid g-stag mt2" style="max-width:920px;margin-inline:auto">
+      <figure class="zoom r34 rv" data-cap="夕陽在海面拉出一道金色光柱，前景是剪影般的灌木。">
+        <div class="frame"><img src="images/s12-sun-column.jpg" alt="夕陽在海面上的金色光柱與前景灌木剪影" loading="lazy"></div>
+        <figcaption><b>13</b>海面上一道光柱，通往看不見的西邊。</figcaption>
+      </figure>
+      <figure class="zoom r34 rv d1" data-cap="顧老師：「天氣的陰謀，還好被我看破」——岩石上的人們朝同一個方向，看太陽沉向海面。">
+        <div class="frame"><img src="images/s18-sunset-people.jpg" alt="岬角岩石上一群人看著夕陽沉向海面" loading="lazy"></div>
+        <figcaption><b>14</b>「天氣的陰謀，還好被我看破」<span style="white-space:nowrap">——顧老師</span></figcaption>
+      </figure>
+    </div>
+
+    <figure class="zoom r-pan mt2 rv" data-cap="岬角岩石上的黃昏全景：人們散在岩石上找位置，左側石十字架面向大海，右側一角白色建築，天邊的雲被落日染成金色。">
+      <div class="frame"><img src="images/s10-panorama.jpg" alt="Fisterra 岬角日落前的全景，人們散在岩石上，左側有石十字架" loading="lazy"></div>
+      <figcaption><b>15</b>世界盡頭的觀眾席：每個人各自找一塊岩石，朝同一個方向坐下。</figcaption>
+    </figure>
+    <div class="narrow rv" style="margin-top:clamp(20px,3vw,34px)">
+      <div class="jot"><img src="images/avatar.jpg" alt=""><div class="t"><span class="who">顧老師 · 旅途筆記</span>
+        <p>岬角上的人漸漸多了。有人爬上岩石，有人低頭滑手機，有人只是靜靜坐著。</p>
+        <p>大家朝著同一個方向，等一件每天都會發生的事。</p>
+        <p>這樣的等待，很好。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CH 5 神話 ============ -->
+<section class="ch" id="myth">
+  <div class="wrap">
+    <div class="myth-intro rv">
+      <p class="kicker">Chapter 05<i>神話</i></p>
+      <h2>一個「現實世界」與<br><em>「未知神域」</em>的交界點。</h2>
+      <p class="lead">在神話與歷史的交織中，Fisterra 被賦予了極其濃厚的邊界感與神聖性。古代神話並不單純把它當作一個地理座標，而是把它訴說成一個「現實世界與未知神域的交界點」。</p>
+      <p class="muted">綜合凱爾特傳說、羅馬時期記載以及後來的基督教化融合，神話主要透過以下四個核心面向來訴說 Fisterra。</p>
+    </div>
+
+    <div class="myth-grid">
+      <article class="myth rv">
+        <span class="no">一</span>
+        <p class="tg">Sun · Death &amp; Return</p>
+        <h3>太陽死亡與復活的終極劇場</h3>
+        <p class="mlead">在遠古人類眼中，歐亞大陸向西延伸至此便戛然而止，前方只有無盡的深淵。因此，神話將這裡視為太陽的歸宿：</p>
+        <ul>
+          <li>每日傍晚，太陽橫跨天空後，會精準無誤地在 Fisterra 沉入大西洋的黑暗洋面（古羅馬人稱為 <span class="term">Mare Tenebrosum</span>，即黑暗之海）。</li>
+          <li>這裡不是單純的日落之處，而是太陽「死去」的地方。這種日復一日的消逝與重生，讓先民們將此地想像成一個具有宇宙神聖秩序的生死循環之門。</li>
+        </ul>
+      </article>
+
+      <article class="myth rv d1">
+        <span class="no">二</span>
+        <p class="tg">Celtic · Soul Ferry</p>
+        <h3>凱爾特神話中的「靈魂渡口」與極樂西方</h3>
+        <p class="mlead">對信仰萬物有靈的凱爾特人而言，Fisterra 是凡間與冥界（或神靈世界）最貼近的薄弱之處：</p>
+        <ul>
+          <li><b>向西的亡靈之路：</b>傳說人死後，靈魂會順著夕陽的軌跡一路向西遊蕩，來到 Fisterra 的懸崖邊。這裡是大地留給人類的最後一塊踏腳石，靈魂將從這裡出發，渡過茫茫大海，前往西方海平線外的神祕永生島嶼。</li>
+          <li><b>石船的載體：</b>神話中常出現神秘的「石船」（<span class="term">Pedras Abalar</span> / 聖母石船等意象），載著神祇或死者渡向彼岸，這也讓加利西亞海岸線上的奇特巨石充滿了超自然的靈異色彩。</li>
+        </ul>
+      </article>
+
+      <article class="myth rv">
+        <span class="no">三</span>
+        <p class="tg">Pagan · Mother Earth</p>
+        <h3>異教神壇與大地母親的生育神話</h3>
+        <p class="mlead">神話也透過地景訴說著自然神力的崇拜：</p>
+        <ul>
+          <li><b><span class="term">Ara Solis</span>（太陽神壇）：</b>傳說在費霍山（Monte Facho）頂峰曾有一座巨大的太陽神壇，由早期部族用來祭拜太陽與自然諸神，感謝光明並祈求賜福。</li>
+          <li><b>生育女神與聖石：</b>當地的民間神話中還流傳著關於遠古女神（如奧爾卡貝拉 <span class="term">Orcabella</span>）的傳說，山上的「聖人床」岩石被賦予了神奇的磁場與生命力，神話訴說著大地的岩石如何見證生命的繁衍與消亡。</li>
+        </ul>
+      </article>
+
+      <article class="myth rv d1">
+        <span class="no">四</span>
+        <p class="tg">Christian · Redemption</p>
+        <h3>基督教化後的「朝聖終點與救贖圓滿」</h3>
+        <p class="mlead">當基督教進入這片土地後，原本帶有神祕、甚至帶點恐懼色彩的異教「世界盡頭」，被重新編織進了聖雅各（Saint James）的宗教傳說中：</p>
+        <ul>
+          <li>基督教神話將其轉化為靈魂試煉的終點站。中世紀的朝聖者在走完千山萬水、參拜完聖地牙哥的遺骨後，選擇繼續向西走到 Fisterra。</li>
+          <li>在這裡，面對汪洋大海，朝聖者透過焚燒舊衣與鞋子的儀式，象徵性地「洗淨俗世罪愆、讓舊我死去、迎向屬靈的新生」。</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="narrow rv" style="margin-top:clamp(34px,5vw,56px)">
+      <div class="jot"><img src="images/avatar.jpg" alt=""><div class="t"><span class="who">顧老師 · 旅途筆記</span>
+        <p>這四個故事，講的其實是同一件事。</p>
+        <p>太陽也好，靈魂也好，舊鞋子也好，走到這裡，都要放下一點什麼，才能繼續往下走。</p></div></div>
+    </div>
+    <p class="fn rv">※ 神話與傳說多為民間口述及宗教敘事的綜合轉述，各地說法不盡相同，僅供文化閱讀參考。</p>
+  </div>
+</section>
+
+<!-- ============ FINALE ============ -->
+<section class="finale" id="threshold">
+  <div class="in">
+    <div class="wrap">
+      <div class="narrow rv" style="text-align:center">
+        <p class="kicker" style="color:#ffd58a">Chapter 06<i style="color:rgba(255,255,255,.7)">門檻</i></p>
+        <h2>神話中的 Fisterra，從來不是<br>「絕望與毀滅」的盡頭，<br>而是一個<em>轉化之所</em>。</h2>
+      </div>
+
+      <div class="grid g2 mt2" style="max-width:900px;margin-inline:auto">
+        <figure class="zoom r34 rv" data-cap="貼滿貼紙的木樁上，掛著旅人留下的鞋，還有登山杖與彩帶；背景是平靜的海灣與遠山。">
+          <div class="frame"><img src="images/s16-shoes-pole.jpg" alt="貼滿貼紙的木樁上掛著旅人留下的鞋與登山杖，背景是海灣與山" loading="lazy"></div>
+          <figcaption><b>16</b>走到盡頭的人，把一部分旅程留在這裡：鞋、登山杖、彩帶與貼紙。</figcaption>
+        </figure>
+        <figure class="zoom r34 rv d1" data-cap="顧老師：「這鞋是卸下行囊、完成旅程了嗎？還是準備找回另一個逃離自己？」——岩石上的銅鑄登山靴。">
+          <div class="frame"><img src="images/c1-boot-question.jpg" alt="岩石上的銅鑄登山靴，顧老師寫著：這鞋是卸下行囊、完成旅程了嗎？還是準備找回另一個逃離自己？" loading="lazy"></div>
+          <figcaption><b>17</b>岩石上的銅鑄登山靴，靴身已長出銅綠。</figcaption>
+        </figure>
+      </div>
+
+      <div class="narrow rv mt2">
+        <div class="jot"><img src="images/avatar.jpg" alt=""><div class="t"><span class="who">顧老師 · 旅途筆記</span>
+          <p>木樁上掛著旅人留下的鞋。鞋子不說話，可是每一雙，都走過一段路。</p>
+          <p>銅鑄的靴子，靴口被石頭填滿，靴身長出了青綠的銅鏽。</p></div></div>
+        <figure class="zoom r34 rv" style="max-width:420px;margin:2.4em auto 0" data-cap="顧老師：「這裡是朝聖之路的起點還是終點」——夕陽下的銅靴，面向大海。">
+          <div class="frame"><img src="images/c4-boot-dusk.jpg" alt="夕陽下的銅鑄登山靴面向大海，顧老師寫著：這裡是朝聖之路的起點還是終點" loading="lazy"></div>
+          <figcaption style="text-align:center"><b>18</b>夕陽把靴子染成剪影，它面向的，是海。</figcaption>
+        </figure>
+        <p style="margin-top:2.2em">神話中的 Fisterra 從來不是一個代表「絕望與毀滅」的盡頭，而是一個轉化之所（<span class="term" style="color:#ffd58a">Threshold</span>）——它是白晝與黑夜、人間與神域、過去與未來交會的神秘樞紐。</p>
+      </div>
+
+      <div class="threshold rv">
+        <div><b>白晝 → 黑夜</b><span>太陽死去，月亮升起</span></div>
+        <div><b>人間 → 神域</b><span>最後一塊踏腳石</span></div>
+        <div><b>過去 → 未來</b><span>舊我離開，新生開始</span></div>
+      </div>
+
+      <div class="pull rv mt2">時間的輪迴，就是如此自然簡單。<br>太陽死去，月亮升起，我們轉身，繼續走。<small>Threshold · Fisterra</small></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>FISTERRA</b><br>
+  朝聖之路 Day 17 · 2026.09.26（六）<br>
+  旅拍與原文｜顧老師　網頁整理｜數位策展深旅<br>
+  <span style="opacity:.7;font-size:12.5px">照片上的短句與日記為顧老師原文；「旅途筆記」小卡為依她筆調補寫。</span>
+</footer>
+
+<!-- music -->
+<audio id="bgm" src="audio/serenidad-devotiva.mp3" loop preload="auto"></audio>
+<button id="music" type="button" aria-label="背景音樂：播放／暫停" aria-pressed="false">
+  <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path id="mIcon" d="M8 5v14l11-7z"/></svg></span>
+  <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  <span class="lb" id="mLb">點一下播放音樂</span>
+</button>
+
+<!-- lightbox -->
+<div id="lb" role="dialog" aria-modal="true" aria-label="圖片檢視">
+  <button class="x" aria-label="關閉">×</button>
+  <button class="pv" aria-label="上一張">‹</button>
+  <img alt="">
+  <p></p>
+  <button class="nx" aria-label="下一張">›</button>
+</div>
+
+<script>
+(function(){
+  /* ---- nav appear + progress ---- */
+  var nav=document.getElementById('nav'), bar=document.getElementById('bar');
+  function onScroll(){
+    var y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
+    nav.classList.toggle('on', y>window.innerHeight*.7);
+    bar.style.width=(h>0?y/h*100:0)+'%';
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  /* ---- reveal ---- */
+  var rv=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    rv.forEach(function(el){io.observe(el)});
+  } else rv.forEach(function(el){el.classList.add('in')});
+
+  /* ---- lightbox ---- */
+  var figs=[].slice.call(document.querySelectorAll('figure.zoom')), cur=0;
+  var lb=document.getElementById('lb'), lbi=lb.querySelector('img'), lbp=lb.querySelector('p');
+  function show(i){
+    cur=(i+figs.length)%figs.length;
+    var f=figs[cur], im=f.querySelector('img');
+    lbi.src=im.getAttribute('src'); lbi.alt=im.alt;
+    lbp.textContent=f.getAttribute('data-cap')||'';
+    lb.classList.add('on'); document.body.style.overflow='hidden';
+  }
+  function hide(){lb.classList.remove('on'); document.body.style.overflow=''}
+  figs.forEach(function(f,i){f.addEventListener('click',function(){show(i)})});
+  var heroImg=document.querySelector('.hero img.bg');
+  lb.querySelector('.x').onclick=hide;
+  lb.querySelector('.pv').onclick=function(e){e.stopPropagation();show(cur-1)};
+  lb.querySelector('.nx').onclick=function(e){e.stopPropagation();show(cur+1)};
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target===lbp)hide()});
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('on'))return;
+    if(e.key==='Escape')hide(); else if(e.key==='ArrowLeft')show(cur-1); else if(e.key==='ArrowRight')show(cur+1);
+  });
+
+  /* ---- sky scrubber ---- */
+  var rng=document.getElementById('rng'), sky=document.getElementById('sky'), sea=document.getElementById('sea'),
+      sun=document.getElementById('sun'), moon=document.getElementById('moon'), stars=document.getElementById('stars'),
+      gs=document.getElementById('gs'), gm=document.getElementById('gm'),
+      capT=document.getElementById('capT'), capD=document.getElementById('capD'), play=document.getElementById('play');
+  var stops=[
+    {t:'#7fb2dc',b:'#f4e2bd',st:'#a9c3d8',sb:'#5f86a6'},
+    {t:'#a9b8d0',b:'#f6cf86',st:'#d9c39a',sb:'#7d93a8'},
+    {t:'#8d8aa6',b:'#f0a24e',st:'#e7b06a',sb:'#6f7f96'},
+    {t:'#5a5f86',b:'#d9744a',st:'#b37a5c',sb:'#4c5b78'},
+    {t:'#1c2748',b:'#55608a',st:'#3d4a72',sb:'#1b2643'}
+  ];
+  var caps=[
+    ['日落前 · 天空還是藍的','北大西洋在腳下鋪開，180 度的視野裡只有海。'],
+    ['雲層漸厚 · 光開始變金','雲層增厚，反而讓即將到來的餘暉更值得期待。'],
+    ['20:20 · 表定日落','太陽貼近海平線——古人眼中，太陽走向死亡的一刻。'],
+    ['沉入 Mare Tenebrosum','黑暗之海吞下最後一線光，目送夕陽西落向大海死去。'],
+    ['不到一分鐘後 · 明月高掛','不遠處一輪明月升起，海面波光粼粼。時間的輪迴，就是如此自然簡單。']
+  ];
+  function hex(c){return [1,3,5].map(function(i){return parseInt(c.substr(i,2),16)})}
+  function mix(a,b,f){var A=hex(a),B=hex(b);return 'rgb('+A.map(function(v,i){return Math.round(v+(B[i]-v)*f)}).join(',')+')'}
+  function lerp(a,b,f){return a+(b-a)*f}
+  function ss(a,b,x){var t=Math.max(0,Math.min(1,(x-a)/(b-a)));return t*t*(3-2*t)}
+  var capIdx=-1;
+  function render(v){
+    var i=Math.min(3,Math.floor(v)), f=v-i, A=stops[i], B=stops[i+1];
+    sky.style.background='linear-gradient(180deg,'+mix(A.t,B.t,f)+' 0%,'+mix(A.b,B.b,f)+' 60%)';
+    sea.style.background='linear-gradient(180deg,'+mix(A.st,B.st,f)+','+mix(A.sb,B.sb,f)+')';
+    /* sun height: 16% -> horizon(57%) at v=2 -> below (70%) at v=3 */
+    var y = v<=2 ? lerp(16,57,v/2) : lerp(57,74,Math.min(1,(v-2)));
+    sun.style.top=y+'%';
+    sun.style.opacity=1-ss(2.6,3.1,v);
+    sun.style.filter='saturate('+lerp(.55,1.25,ss(0,2.2,v))+') hue-rotate('+(-lerp(0,14,ss(1,3,v)))+'deg)';
+    var up=1-ss(1.9,2.9,v);
+    gs.style.opacity=(.15+.85*ss(0,1.6,v))*up;
+    var mv=ss(3,4,v);
+    moon.style.opacity=mv; stars.style.opacity=ss(3.2,4,v)*.9;
+    gm.style.opacity=ss(3.4,4,v)*.85;
+    var k=Math.round(v);
+    if(k!==capIdx){capIdx=k;capT.textContent=caps[k][0];capD.textContent=caps[k][1]}
+    rng.setAttribute('aria-valuetext',caps[k][0]);
+  }
+  rng.addEventListener('input',function(){stop();render(parseFloat(rng.value))});
+  var raf=null;
+  function stop(){if(raf){cancelAnimationFrame(raf);raf=null}play.textContent='▶';play.setAttribute('aria-label','播放')}
+  play.addEventListener('click',function(){
+    if(raf){stop();return}
+    var v=parseFloat(rng.value); if(v>=3.98)v=0;
+    var last=null; play.textContent='❚❚'; play.setAttribute('aria-label','暫停');
+    (function step(ts){
+      if(last===null)last=ts;
+      var dt=(ts-last)/1000; last=ts;
+      v=Math.min(4,v+dt*0.42); rng.value=v; render(v);
+      if(v<4)raf=requestAnimationFrame(step); else stop();
+    })(performance.now());
+  });
+  render(0);
+
+  /* ---- background music (autoplay, falling back to first user gesture) ---- */
+  var bgm=document.getElementById('bgm'), mb=document.getElementById('music'),
+      mIcon=document.getElementById('mIcon'), mLb=document.getElementById('mLb');
+  var PLAY='M8 5v14l11-7z', PAUSE='M6 5h4v14H6zm8 0h4v14h-4z', TARGET=0.4;
+  var userPaused=false, fadeT=null;
+  try{userPaused=localStorage.getItem('fisterra-bgm')==='off'}catch(e){}
+  bgm.volume=0;
+  function ui(on){
+    mb.classList.toggle('on',on); mb.classList.remove('wait');
+    mb.setAttribute('aria-pressed',on?'true':'false');
+    mIcon.setAttribute('d',on?PAUSE:PLAY); mLb.textContent=on?'音樂':'播放音樂';
+  }
+  function fade(to,ms,done){
+    clearInterval(fadeT); var from=bgm.volume, t0=performance.now();
+    fadeT=setInterval(function(){
+      var f=Math.min(1,(performance.now()-t0)/ms);
+      bgm.volume=Math.max(0,Math.min(1,from+(to-from)*f));
+      if(f>=1){clearInterval(fadeT); if(done)done()}
+    },50);
+  }
+  function start(){
+    var pr=bgm.play();
+    if(pr&&pr.then){pr.then(function(){ui(true);fade(TARGET,2500)}).catch(function(){waiting()})}
+    else{ui(true);fade(TARGET,2500)}
+  }
+  var gestures=['pointerdown','touchend','keydown','click'];
+  function onGesture(){ if(userPaused||!bgm.paused)return; start(); }
+  function waiting(){
+    mb.classList.add('wait'); mLb.textContent='點一下播放音樂';
+    gestures.forEach(function(g){document.addEventListener(g,firstGesture,{once:true,passive:true})});
+  }
+  function firstGesture(e){
+    gestures.forEach(function(g){document.removeEventListener(g,firstGesture)});
+    if(mb.contains(e.target))return;   /* button handles its own click */
+    onGesture();
+  }
+  mb.addEventListener('click',function(){
+    gestures.forEach(function(g){document.removeEventListener(g,firstGesture)});
+    if(bgm.paused){
+      userPaused=false; try{localStorage.setItem('fisterra-bgm','on')}catch(e){}
+      start();
+    }else{
+      userPaused=true; try{localStorage.setItem('fisterra-bgm','off')}catch(e){}
+      fade(0,600,function(){bgm.pause();ui(false)});
+    }
+  });
+  document.addEventListener('visibilitychange',function(){
+    if(document.hidden){ if(!bgm.paused)bgm.pause(); }
+    else if(!userPaused && mb.classList.contains('on')){ bgm.play().catch(function(){}) }
+  });
+  if(userPaused){ ui(false); mLb.textContent='播放音樂' } else { ui(false); start(); }
+})();
+</script>
+</body>
+</html>

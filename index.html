@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#153f46">
+  <meta name="description" content="19 天葡萄牙之路：從中央線走入靈性線，穿越葡萄牙與西班牙，抵達 Santiago、Fisterra 與 Muxía。">
+  <title>從中央線，走入靈性線｜19 天葡萄牙之路</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="hero" id="top">
+    <nav class="nav wrap">
+      <a class="brand" href="#top" aria-label="回到頁首"><span>➜</span> CAMINHO</a>
+      <div class="navlinks"><a href="#map-section">路線</a><a href="#days">19 天</a><a href="#finale">世界盡頭</a></div>
+    </nav>
+    <div class="hero-art" aria-hidden="true">
+      <div class="sun"></div><div class="tile tile-a"></div><div class="tile tile-b"></div>
+      <div class="shell"><span>⌁</span></div>
+      <div class="path-line"></div><div class="walker">↗</div>
+    </div>
+    <div class="hero-copy wrap">
+      <p class="eyebrow">CAMINHO PORTUGUÊS · 9/10—9/28</p>
+      <h1>從中央線，<br><em>走入靈性線。</em></h1>
+      <p class="lede">19 天，從 Porto 的地鐵末站起步。跨過國境、走進石與水，搭船循著傳說抵達 Padrón，最後把路交給大西洋。</p>
+      <a class="cta" href="#map-section">沿著黃色箭頭出發 <b>↓</b></a>
+    </div>
+    <div class="hero-foot wrap"><span>PORTUGAL</span><i></i><span>ESPAÑA</span><i></i><span>ATLÁNTICO</span></div>
+  </header>
+
+  <main>
+    <section class="numbers wrap reveal" aria-label="旅程摘要">
+      <div><strong>19</strong><span>天的旅程</span></div>
+      <div><strong>230.7<small> km</small></strong><span>已記錄步行</span></div>
+      <div><strong>383,500</strong><span>已記錄步數</span></div>
+      <div><strong>2</strong><span>個國家</span></div>
+    </section>
+
+    <section class="intro wrap reveal">
+      <p class="section-no">01 / THE ROUTE</p>
+      <div><h2>這不是一條直線，<br>而是三次選擇。</h2></div>
+      <div class="intro-copy"><p>先沿中央線向北，從 Valença 徒步跨越國境；在 Pontevedra 轉身走入靈性線；抵達 Santiago 後，再往西追尋古人眼中的世界盡頭。</p><div class="legend"><span><i class="central"></i>中央線</span><span><i class="spiritual"></i>靈性線</span><span><i class="sea"></i>海上之路</span><span><i class="after"></i>世界盡頭</span></div></div>
+    </section>
+
+    <section class="map-section" id="map-section">
+      <div class="map-head wrap"><div><span class="kicker">互動旅程地圖</span><h2>點一座城，<br>回到那一天。</h2></div><p>地圖標記和下方每日卡片會彼此連動。黃色箭頭是步行，水藍色虛線是從 Vilanova de Arousa 前往 Padrón 的船程。</p></div>
+      <div class="map-shell wrap">
+        <div id="map" aria-label="葡萄牙之路互動地圖"></div>
+        <aside class="map-panel" id="mapPanel" aria-live="polite"></aside>
+        <button class="reset-map" id="resetMap">顯示全程</button>
+      </div>
+    </section>
+
+    <section class="turning">
+      <div class="turning-photo"><img src="images/ocean-road.jpg" alt="Fisterra 岬角與朝聖者剪影" loading="lazy"></div>
+      <div class="turning-copy reveal"><span class="kicker">DAY 11 · PONTEVEDRA</span><h2>原本往北的路，<br><em>在這裡轉向海。</em></h2><p>中央線通往 Santiago；靈性線則先把人帶向 Armenteira 的修道院、石與水之路，以及 Arousa 河口。繞遠一點，讓抵達不只是一個終點。</p><div class="route-switch"><b>CENTRAL</b><span>→</span><strong>VARIANTE ESPIRITUAL</strong></div></div>
+    </section>
+
+    <section class="days wrap" id="days">
+      <div class="section-title reveal"><div><span class="kicker">THE WALKING DIARY</span><h2>十九天，十九個<br>留在身體裡的座標。</h2></div><div class="filters" role="group" aria-label="篩選行程"><button class="active" data-filter="all">全部</button><button data-filter="walk">步行</button><button data-filter="rest">停留</button><button data-filter="special">船／延伸</button></div></div>
+      <div class="day-layout">
+        <div class="day-list" id="dayList"></div>
+        <aside class="chart-card reveal"><span class="kicker">STEPS / DAY</span><h3>每天走了多遠？</h3><div class="chart" id="chart"></div><p>只統計有留下步數的 14 天。最高紀錄落在走向 Vilanova de Arousa 的那一天。</p></aside>
+      </div>
+    </section>
+
+    <section class="water-story reveal">
+      <div class="wrap water-grid"><div><span class="kicker">DAY 14 · TRASLATIO</span><h2>船行 28 公里，<br>沿著傳說上岸。</h2></div><div><p>從 Vilanova de Arousa 乘船前往 Padrón，海上段連起靈性線最具象徵性的篇章。Padrón 是遺體傳說進入西班牙的「入口」，Santiago 則是被發現與最終安息的「聖殿」。</p><div class="boat-line"><span>VILANOVA</span><b>≋　⛵　≋</b><span>PADRÓN</span></div></div></div>
+    </section>
+
+    <section class="finale" id="finale">
+      <img src="images/fisterra-sunset.jpg" alt="Fisterra 海岸落日" loading="lazy">
+      <div class="shade"></div>
+      <div class="finale-copy wrap reveal"><span class="kicker">EPILOGUE · THE THREE ENDINGS</span><h2>一趟朝聖，<br>有三種抵達。</h2><div class="endings"><article><b>01</b><h3>Santiago</h3><p>聖殿的終點</p></article><article><b>02</b><h3>Fisterra</h3><p>陸地的終點</p></article><article><b>03</b><h3>Muxía</h3><p>內在旅程的終點</p></article></div><a class="story-link" href="fisterra/">閱讀 Day 17 世界盡頭完整圖文誌 <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><b>CAMINHO PORTUGUÊS</b><p>旅程資料依個人行走紀錄整理 · 2026</p><a href="#top">回到起點 ↑</a></div></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
